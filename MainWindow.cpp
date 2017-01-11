@@ -12,9 +12,9 @@ MainWindow::MainWindow(QWidget * parent, Qt::WindowFlags flags) : QMainWindow
 
 void MainWindow::buttonClicked() {
     QString text = _ui.lineEdit->text(); 
-    QLabel label = _ui.label;
+    //QLabel label = _ui.label;
     _ui.lineEdit->setText("");
     this->style()->unpolish(this);
-    label.setText(text);
+    //label.setText(text);
     _ui.listWidget->addItem(text);   
 }
