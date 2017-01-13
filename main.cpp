@@ -16,14 +16,16 @@ using namespace std;
 int main(int argc, char **argv) {
     QApplication app(argc, argv);
     
-    /*
-    QFile file(":/stylesheet.qss");
+    
+    QFile file(":/QTDark.stylesheet");
     if(file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         app.setStyleSheet(file.readAll());
         file.close();
     }
-    */
+    app.setStyleSheet(file.readAll());
+    file.close();
+    
     
     cout << "Hello World" << endl;
     
